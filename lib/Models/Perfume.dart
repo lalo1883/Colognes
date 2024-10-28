@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Perfume extends ChangeNotifier {
   final String name;
-  final int? rating;
+  final double? rating;
   final List<String> notes;
   final String brand;
   final String description;

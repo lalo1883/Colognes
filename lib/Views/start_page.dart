@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fragance/main.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
@@ -44,8 +46,8 @@ class _StartPageState extends State<StartPage> {
                         width: screenWidth * .3,
                         height: screenHeight * .06,
                         child: ElevatedButton(onPressed: (){
-                          print("Login");
-                          Navigator.pushNamed(context, "/home_page");
+                          print("Example");
+                          context.go("/example");
                         },
                             child: Text("Login", style: TextStyle(color: Colors.white),),
                           style: ElevatedButton.styleFrom(
@@ -60,8 +62,8 @@ class _StartPageState extends State<StartPage> {
                         width: screenWidth * .3,
                         height: screenHeight * .06,
                         child: ElevatedButton(onPressed: (){
-                          print("Register");
-                          Navigator.pushNamed(context, "/home_page");
+                          print("Search");
+                          context.go("/");
                         },
                           child: Text("Register", style: TextStyle(color: Colors.black),),
                           style: ElevatedButton.styleFrom(
